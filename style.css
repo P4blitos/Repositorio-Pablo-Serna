@@ -1,0 +1,19 @@
+
+body{
+    font-size: 30px;
+}
+div{
+    font-size: 2rem;
+}
+p{
+    font-size: 10vw;
+}
+h1{
+    font-size: 100%;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style:none
+}
