@@ -1,5 +1,4 @@
-//1 Punto
-
+//Punto 1
 const juegos={
     nombre: 'Dark Souls',
     fecha_lanzamiento: 2011 ,
@@ -27,5 +26,36 @@ console.log(juegos.salir())
 //Punto 2
 
 class vehiculo{
+    constructor(nombre,marca, color, modelo){
+        this.nombre=nombre;
+        this.marca=marca;
+        this.color=color;
+        this.modelo=modelo;
+    }
     
 }
+
+class moto extends vehiculo{
+    constructor(nombre, marca, color, modelo, canLlantas){
+        super(nombre,marca, color, modelo);
+        this.canLlantas=canLlantas;
+    }
+    mostrar(){
+        return `Est@ ${this.nombre}  de marca ${this.marca} tiene ${this.canLlantas} llantas`;
+    }
+}
+
+let vehiculito = new moto('Moto','AKT','Rojo',2020,2);
+console.log(vehiculito.mostrar());
+
+//punto 3
+const cambiar = (objeto) => {
+    vehiculito.marca='Toyota';
+    vehiculito.color='Azul';
+    vehiculito.modelo=2019;
+    vehiculito.canLlantas=3;
+    return vehiculito;
+}
+
+console.log(cambiar(vehiculito));
+console.log(cambiar(vehiculito).mostrar());
