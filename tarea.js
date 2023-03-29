@@ -55,7 +55,15 @@ const cambiar = (objeto) => {
     vehiculito.modelo=2019;
     vehiculito.canLlantas=3;
     return vehiculito;
+
+}
+
+const clase = (objeto) => {
+    let miMotico= new moto('Moto', 'Yamaha', 'Verde',2019, 2);
+    miMotico.modelo= 2018;
+    console.log(cambiar(miMotico).mostrar());
 }
 
 console.log(cambiar(vehiculito));
 console.log(cambiar(vehiculito).mostrar());
+
